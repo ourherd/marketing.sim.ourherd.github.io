@@ -1,0 +1,18 @@
+{
+  "name": "marketing_sim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apply-bootstrap-CSS": "cp -R node_modules/bootstrap/dist/css/bootstrap.min.css libs/bootstrap/css/",
+    "apply-bootstrap-JS": "cp -R node_modules/bootstrap/dist/js/bootstrap.bundle.min.js libs/bootstrap/js/",
+    "clean-bootstrap": "rm -f libs/bootstrap/css/*; rm -f libs/bootstrap/js/*",
+    "apply-bootstrap": "npm run apply-bootstrap-CSS; npm run apply-bootstrap-JS",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4"
+  }
+}
