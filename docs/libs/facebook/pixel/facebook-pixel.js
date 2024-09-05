@@ -1,3 +1,5 @@
+var FB_PIXEL_EVENT_ID = '803475945191292';
+
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -6,5 +8,5 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '803475945191292');
+fbq('init', FB_PIXEL_EVENT_ID);
 fbq('track', 'PageView');

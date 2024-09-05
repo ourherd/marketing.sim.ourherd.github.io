@@ -1,3 +1,5 @@
+var GOOGLE_TAG_MANAGER_CONTAINER_ID = "GTM-N5Q6DWBQ"
+
 (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -7,4 +9,4 @@
     j.async = true;
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-N5Q6DWBQ");
+  })(window, document, "script", "dataLayer", GOOGLE_TAG_MANAGER_CONTAINER_ID);
