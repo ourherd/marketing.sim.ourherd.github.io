@@ -58,11 +58,6 @@
     <!-- Main container -->
     <div class="container mt-5">
       <h1>Donation</h1>
-      <script>
-        var urlParams = new URLSearchParams(queryString);
-        var fistname = urlParams.get('firstname')
-        document.getElementById('firstname-p').innerHTML = fistname;
-      </script>
       <p>
         <span>Hi </span><sapn id="firstname-p"></sapn>
       </p>
@@ -90,6 +85,11 @@
           window.location.href = './thankyou.html';
         }
       }
+    </script>
+    <script>
+      var urlParams = new URLSearchParams(queryString);
+      var fistname = urlParams.get('firstname')
+      document.getElementById('firstname-p').innerHTML = "<b>" + fistname + "</b>";
     </script>
   </body>
 </html>
