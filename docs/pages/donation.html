@@ -80,10 +80,10 @@
       <h1>Donation</h1>
       <p>This is a simple example of a webpage using Bootstrap.</p>
       <div>
-        <button class="btn btn-primary tag_donation_button" button_target="10" onclick="donationClick">10 $</button>
-        <button class="btn btn-info tag_donation_button" button_target="20" onclick="donationClick">20 $</button>
-        <button class="btn btn-success tag_donation_button" button_target="50" onclick="donationClick">50 $</button>
-        <button class="btn btn-danger tag_donation_button" button_target="100" onclick="donationClick">100 $</button>
+        <button class="btn btn-primary tag_donation_button" button_target="10" onclick="donationClick()">10 $</button>
+        <button class="btn btn-info tag_donation_button" button_target="20" onclick="donationClick()">20 $</button>
+        <button class="btn btn-success tag_donation_button" button_target="50" onclick="donationClick()">50 $</button>
+        <button class="btn btn-danger tag_donation_button" button_target="100" onclick="donationClick()">100 $</button>
       <div>
     </div>
     <div class="container mt-5">
@@ -99,7 +99,7 @@
       function donationClick() {
         var isDonate = confirm('Please click confirm to process your donation');
         if(isDonate) {
-          window.location('./thankyou.html')
+          window.open('./thankyou.html')
         }
       }
     </script>
