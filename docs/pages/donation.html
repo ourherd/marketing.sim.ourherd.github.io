@@ -47,30 +47,10 @@
             <a class="nav-link" href="../../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./features.html">Features</a>
+            <a class="nav-link" href="./register.html">Donor Registration</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./donation.html">
-              Donation
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#Donation">Donation</a>
           </li>
         </ul>
       </div>
@@ -78,7 +58,15 @@
     <!-- Main container -->
     <div class="container mt-5">
       <h1>Donation</h1>
-      <p>This is a simple example of a webpage using Bootstrap.</p>
+      <script>
+        var urlParams = new URLSearchParams(queryString);
+        var fistname = urlParams.get('firstname')
+        document.getElementById('firstname-p').innerHTML = fistname;
+      </script>
+      <p>
+        <span>Hi </span><sapn id="firstname-p"></sapn>
+      </p>
+      <p>To support the dogs please select one of donation buttons.</p>
       <div>
         <button class="btn btn-primary gtm_donation_button" donation_button="10" onclick="donationClick()">10 $</button>
         <button class="btn btn-info gtm_donation_button" donation_button="20" onclick="donationClick()">20 $</button>
